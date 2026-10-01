@@ -1,0 +1,44 @@
+# XeonKitPvP Quest definitions
+quests:
+  daily:
+    daily-kills:
+      display: '&bDaily Hunter'
+      description: '&7Elimina 10 giocatori.'
+      type: KILLS
+      target: 10
+      reward:
+        coins: 250
+        xp: 150
+    daily-streak:
+      display: '&6Daily Streak'
+      description: '&7Raggiungi una killstreak di 5.'
+      type: STREAK
+      target: 5
+      reward:
+        coins: 400
+        xp: 200
+    daily-assists:
+      display: '&dDaily Teamplay'
+      description: '&7Ottieni 5 assist.'
+      type: ASSISTS
+      target: 5
+      reward:
+        coins: 200
+        xp: 125
+  weekly:
+    weekly-kills:
+      display: '&aWeekly Slayer'
+      description: '&7Elimina 50 giocatori.'
+      type: KILLS
+      target: 50
+      reward:
+        coins: 1500
+        xp: 1000
+    weekly-deaths:
+      display: '&cWeekly Survivor'
+      description: '&7Sopravvivi a 25 morti.'
+      type: DEATHS
+      target: 25
+      reward:
+        coins: 750
+        xp: 500

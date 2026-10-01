@@ -1,0 +1,147 @@
+core:
+  debug: false
+  save-interval-seconds: 30
+  auto-save-on-quit: true
+
+game:
+  enabled-worlds: [kitpvp]
+  allow-pvp: true
+  block-build: false
+  block-break: false
+  no-item-drops: true
+  no-hunger: true
+  soup-heal-half-hearts: 6
+  spawn-protection-radius: 10.0
+  combat-tag-seconds: 15
+  combat-logout-penalty: true
+  combat-logout-command: ''
+  prevent-void-death: true
+  respawn-delay-ticks: 2
+  join-kit: warrior
+
+spawn:
+  world: kitpvp
+  x: 0.5
+  y: 100.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+scoreboard:
+  enabled: true
+  refresh-ticks: 20
+  title: '&b&lXEON KITPVP'
+  lines:
+    - '&7&m----------------'
+    - '&f%player% %tag%'
+    - '&7Prestige: &d%prestige%'
+    - '&7Level: &b%level%'
+    - '&7XP: &b%xp%&7/&b%nextxp%'
+    - '&7Kills: &a%kills%'
+    - '&7Deaths: &c%deaths%'
+    - '&7K/D: &e%kd%'
+    - '&7Streak: &6%streak%'
+    - '&7Coins: &6%coins%'
+    - '&7Bounty: &c%bounty%'
+    - '&7Combat: &c%combat%'
+    - '&7&m----------------'
+
+tablist:
+  enabled: true
+  header: '&b&lXEON KITPVP
+&7Welcome, &f%player%'
+  footer: '&7Online: &b%online% &8| &7Coins: &6%coins% &8| &7P: &d%prestige% &7L: &b%level%'
+
+economy:
+  join-coins: 250
+  kill-coins: 25
+  streak-coins: 10
+  xp-per-kill: 25
+  xp-per-death: 5
+  assist-coins: 10
+
+leveling:
+  enabled: true
+  max-level: 100
+  base-xp: 100
+  xp-per-level: 75
+  prestige-enabled: true
+  max-prestige: 25
+  prestige-xp-multiplier: 1.10
+  prestige-reward-coins: 2500
+  prestige-reset-xp: true
+  prestige-announce: true
+
+killstreak:
+  enabled: true
+  announcements: true
+  rewards:
+    '3':
+      coins: 25
+      commands: []
+    '5':
+      coins: 75
+      commands: ['give %player% golden_apple 1']
+    '10':
+      coins: 200
+      commands: []
+
+anti-farm:
+  enabled: true
+  pair-window-seconds: 600
+  max-rewarded-kills-per-window: 3
+  minimum-kill-delay-seconds: 20
+  block-statistics: false
+  notify-player: true
+  ignore-permission: 'kitpvp.antifarm.bypass'
+
+combat-log:
+  enabled: true
+  duration-seconds: 15
+  assist-window-seconds: 10
+  kill-attacker-on-logout: true
+  broadcast-logout: true
+  block-commands: true
+  blocked-commands:
+    - /spawn
+    - /hub
+    - /kit
+    - /kits
+    - /tp
+    - /teleport
+    - /bounty
+    - /gang
+
+quests:
+  enabled: true
+  notify-progress: true
+  auto-reward: true
+
+shop:
+  enabled: true
+  menu-update-on-purchase: true
+
+chat-tags:
+  enabled: true
+  format: '%tag% &f%player% &8» &7%message%'
+
+kill-effects:
+  enabled: true
+  radius: 24
+
+bounty:
+  enabled: true
+  min: 50
+  max: 100000
+  killer-reward-percent: 100
+
+gang:
+  enabled: true
+  friendly-fire: false
+  max-members: 15
+  create-cost: 1000
+
+hooks:
+  vault: true
+  placeholderapi: true
+  tab: true

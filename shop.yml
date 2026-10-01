@@ -1,0 +1,93 @@
+shop:
+  enabled: true
+  title: '&8&lXeon Shop'
+  size: 54
+  items:
+    tag-warrior:
+      type: TAG
+      id: warrior
+      slot: 10
+      material: NAME_TAG
+      price: 750
+      name: '&c[Warrior] &7Tag'
+      lore:
+        - '&7Tag chat: &c[Warrior]'
+        - '&7Prezzo: &6%price%'
+        - '&eClicca per acquistare/selezionare'
+    tag-hunter:
+      type: TAG
+      id: hunter
+      slot: 12
+      material: NAME_TAG
+      price: 1250
+      name: '&a[Hunter] &7Tag'
+      lore:
+        - '&7Tag chat: &a[Hunter]'
+        - '&7Prezzo: &6%price%'
+        - '&eClicca per acquistare/selezionare'
+    tag-champion:
+      type: TAG
+      id: champion
+      slot: 14
+      material: NAME_TAG
+      price: 2500
+      name: '&6[Champion] &7Tag'
+      lore:
+        - '&7Tag chat: &6[Champion]'
+        - '&7Prezzo: &6%price%'
+        - '&eClicca per acquistare/selezionare'
+    tag-legend:
+      type: TAG
+      id: legend
+      slot: 16
+      material: NAME_TAG
+      price: 5000
+      name: '&b[Legend] &7Tag'
+      lore:
+        - '&7Tag chat: &b[Legend]'
+        - '&7Prezzo: &6%price%'
+        - '&eClicca per acquistare/selezionare'
+    effect-lightning:
+      type: KILL_EFFECT
+      id: lightning
+      slot: 28
+      material: BLAZE_POWDER
+      price: 1500
+      name: '&eLightning Kill Effect'
+      lore:
+        - '&7Fulmine alla kill.'
+        - '&7Prezzo: &6%price%'
+        - '&eClicca per acquistare/selezionare'
+    effect-smoke:
+      type: KILL_EFFECT
+      id: smoke
+      slot: 30
+      material: COAL
+      price: 1000
+      name: '&8Smoke Kill Effect'
+      lore:
+        - '&7Fumo alla kill.'
+        - '&7Prezzo: &6%price%'
+        - '&eClicca per acquistare/selezionare'
+    effect-flames:
+      type: KILL_EFFECT
+      id: flames
+      slot: 32
+      material: BLAZE_POWDER
+      price: 1250
+      name: '&cFlames Kill Effect'
+      lore:
+        - '&7Fiamme alla kill.'
+        - '&7Prezzo: &6%price%'
+        - '&eClicca per acquistare/selezionare'
+    effect-ender:
+      type: KILL_EFFECT
+      id: ender
+      slot: 34
+      material: ENDER_PEARL
+      price: 2000
+      name: '&5Ender Kill Effect'
+      lore:
+        - '&7Effetto ender alla kill.'
+        - '&7Prezzo: &6%price%'
+        - '&eClicca per acquistare/selezionare'

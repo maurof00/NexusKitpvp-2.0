@@ -1,0 +1,36 @@
+# Cosmetic IDs are used by /tag and /killeffect.
+tags:
+  default:
+    display: '&7'
+  warrior:
+    display: '&c[Warrior]'
+  hunter:
+    display: '&a[Hunter]'
+  champion:
+    display: '&6[Champion]'
+  legend:
+    display: '&b[Legend]'
+
+kill-effects:
+  none:
+    display: '&7None'
+  lightning:
+    display: '&eLightning'
+    effect: LIGHTNING
+  smoke:
+    display: '&8Smoke'
+    effect: SMOKE
+    data: 4
+  flames:
+    display: '&cFlames'
+    effect: MOBSPAWNER_FLAMES
+  ender:
+    display: '&5Ender'
+    effect: ENDER_SIGNAL
+  potion:
+    display: '&dPotion'
+    effect: POTION_BREAK
+    data: 0
+  blaze:
+    display: '&6Blaze'
+    effect: BLAZE_SHOOT

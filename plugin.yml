@@ -1,0 +1,63 @@
+name: XeonKitPvP
+main: it.maurof00.xeonkitpvp.KitPvPCore
+version: 2.1.0
+author: maurof00
+description: Modular KitPvP core with ACF commands, quests, prestige, anti-farm, combat-log and cosmetics.
+website: https://github.com/
+softdepend: [Vault, PlaceholderAPI, TAB]
+commands:
+  kitpvp:
+    description: Core command.
+    aliases: [kp, kpcore]
+  kit:
+    description: Opens the KitPvP kit selector.
+    aliases: [kits]
+  stats:
+    description: Shows KitPvP statistics.
+    aliases: [stat]
+  top:
+    description: Shows KitPvP leaderboards.
+    aliases: [leaderboard, lb]
+  bounty:
+    description: Manages bounties.
+    aliases: [taglia]
+  spawn:
+    description: Teleports to KitPvP spawn.
+    aliases: [hub]
+  gang:
+    description: Manages gangs.
+    aliases: [clan]
+  quests:
+    description: Shows daily and weekly quests.
+    aliases: [quest, missioni]
+  level:
+    description: Shows level and prestige.
+    aliases: [lvl, prestige]
+  shop:
+    description: Opens the cosmetic shop.
+    aliases: [store, negozio]
+  tag:
+    description: Selects a chat tag.
+    aliases: [tags]
+  killeffect:
+    description: Selects a kill effect.
+    aliases: [killfx, kill-effect]
+permissions:
+  kitpvp.admin:
+    description: Full administration access.
+    default: op
+  kitpvp.bypass:
+    description: Bypass KitPvP combat/protection restrictions.
+    default: op
+  kitpvp.kit.*:
+    description: Access every KitPvP kit.
+    default: op
+  kitpvp.tag.*:
+    description: Access every chat tag.
+    default: op
+  kitpvp.killeffect.*:
+    description: Access every kill effect.
+    default: op
+  kitpvp.antifarm.bypass:
+    description: Bypass anti-farm reward limits.
+    default: op
